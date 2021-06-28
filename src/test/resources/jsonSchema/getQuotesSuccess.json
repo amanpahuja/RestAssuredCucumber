@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "totalCount": {
+      "type": "integer"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "lastItemIndex": {
+      "type": "integer"
+    },
+    "results": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "tags": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "_id": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "authorSlug": {
+              "type": "string"
+            },
+            "length": {
+              "type": "integer"
+            },
+            "dateAdded": {
+              "type": "string"
+            },
+            "dateModified": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tags",
+            "_id",
+            "content",
+            "author",
+            "authorSlug",
+            "length",
+            "dateAdded",
+            "dateModified"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "tags": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "_id": {
+              "type": "string"
+            },
+            "content": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "authorSlug": {
+              "type": "string"
+            },
+            "length": {
+              "type": "integer"
+            },
+            "dateAdded": {
+              "type": "string"
+            },
+            "dateModified": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "tags",
+            "_id",
+            "content",
+            "author",
+            "authorSlug",
+            "length",
+            "dateAdded",
+            "dateModified"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "count",
+    "totalCount",
+    "page",
+    "totalPages",
+    "lastItemIndex",
+    "results"
+  ]
+}

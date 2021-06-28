@@ -1,0 +1,10 @@
+CoreComponents\Cucumber\ScenarioContext.class
+CoreFunctions\GetQuotes\services\GetQuotes.class
+CoreFunctions\GetQuotes\triggers\GetQuotesFunctions.class
+CoreComponents\managers\CoreFunctionsManager.class
+CoreComponents\managers\CoreScenarioManager.class
+CoreFunctions\GetQuotes\triggers\impl\GetQuotesFunctionsImpl.class
+CoreFunctions\GetQuotes\GetQuotesCoreFunctions.class
+CoreComponents\Common\RestUtil.class
+CoreComponents\Cucumber\TestContext.class
+CoreComponents\Common\AssertUtil.class

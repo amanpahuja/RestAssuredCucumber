@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="52" time="108.575">
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot;" time="10.883">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "lastItemIndex" and value is "20"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot; 2" time="2.049">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "2".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the response has field "lastItemIndex" and value is "40"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot; 3" time="1.919">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "h".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "lastItemIndex" and value is "20"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot; 4" time="1.987">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "A34".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "lastItemIndex" and value is "20"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot; 5" time="1.887">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "a$%56".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "lastItemIndex" and value is "20"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot; 6" time="2.245">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "0".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "lastItemIndex" and value is "20"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot; 7" time="1.827">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "-4".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "lastItemIndex" and value is "20"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;PAGE&quot; 8" time="1.922">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "page" with value as "".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "lastItemIndex" and value is "20"...passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot;" time="2.039">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Albert Einstein".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "results[0].author" and value is "Albert Einstein".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; 2" time="1.872">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "results[0].author" and value is "Helmut Schmidt".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; with invalid names" time="1.818">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Albert".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "count" and value is "0"............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; with invalid names 2" time="1.775">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "asdg".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "count" and value is "0"............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; with invalid names 3" time="1.765">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "AShdg6786".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "count" and value is "0"............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; with invalid names 4" time="2.072">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "123 Albert".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "count" and value is "0"............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; with invalid name" time="1.726">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "$%^$^%".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 500.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot;" time="1.961">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes,wisdom".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the tags field in response has data as "famous-quotes,wisdom".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; 2" time="1.941">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the tags field in response has data as "famous-quotes,inspirational".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; 3" time="1.95">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes!wisdom".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes!wisdom".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; having invalid values" time="1.98">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-ques!wism".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; having invalid values 2" time="1.858">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "#$%^%!45645".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; having invalid values 3" time="1.83">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "123!wis".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; having invalid values 4" time="2.182">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "0000!".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot;" time="1.854">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes!wisdom" and "author" with value as "Confucius".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes!wisdom".passed
+Then Verify that the response has field "results[0].author" and value is "Confucius".passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot; 2" time="1.933">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes,wisdom" and "author" with value as "Confucius".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes,wisdom".passed
+Then Verify that the response has field "results[0].author" and value is "Confucius".passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot; with invalid values" time="1.738">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes!wisdom" and "author" with value as "Confuci".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot; with invalid values 2" time="1.887">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quote" and "author" with value as "Confucius".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot; with invalid values 3" time="1.823">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "wid" and "author" with value as "Confu".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot; with invalid values 4" time="2.09">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes,wisdom" and "author" with value as "Confuc".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot; with invalid values 5" time="1.761">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quots!wisdo" and "author" with value as "Confucius".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;AUTHOR&quot; with invalid values 6" time="1.765">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes!wisdo" and "author" with value as "Coucius".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot; with invalid values" time="1.974">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quote" and "page" with value as "2".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot; with invalid values 2" time="1.912">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "wid" and "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot; with invalid values 3" time="1.802">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quots!wisdo" and "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot;" time="2.222">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes!wisdom" and "page" with value as "2".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes!wisdom".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot; 2" time="1.802">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes,wisdom" and "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes,wisdom".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot; 3" time="1.992">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes!wisdom" and "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes!wisdom".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot; 4" time="1.808">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes,wisdom" and "page" with value as "2".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes,wisdom".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;TAGS&quot; and &quot;PAGE&quot; 5" time="1.83">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "tags" with value as "famous-quotes!wisdo" and "page" with value as "2".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes!wisdo".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot;" time="2.037">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Confucius" and "page" with value as "2".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the response has field "results[0].author" and value is "Confucius".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot; 2" time="1.854">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Confucius" and "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results[0].author" and value is "Confucius".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot; 3" time="2.068">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Confucius" and "page" with value as "as".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results[0].author" and value is "Confucius".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot; 4" time="1.921">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Confucius" and "page" with value as "#$".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results[0].author" and value is "Confucius".passed
+And Verify the json schema for the response as "getQuotesSuccess"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot; 5" time="1.796">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Confuciu" and "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot; 6" time="1.792">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "1234hgfgh" and "page" with value as "1".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot; 7" time="1.726">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Co#$5" and "page" with value as "2".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot; and &quot;PAGE&quot; 8" time="1.844">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Confucius" and "page" with value as "1500".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1500"..........passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot;, &quot;PAGE&quot; and &quot;TAGS&quot;" time="2.082">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Helmut Schmidt","page" with value as "1" and "tags" with value as "famous-quotes!wisdom".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results[0].author" and value is "Helmut Schmidt".passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes!wisdom".passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot;, &quot;PAGE&quot; and &quot;TAGS&quot; 2" time="1.765">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Helmut Schmidt","page" with value as "as" and "tags" with value as "famous-quotes".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results[0].author" and value is "Helmut Schmidt".passed
+Then Verify that the tags field in response has data as either tags mentioned in "famous-quotes".passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot;, &quot;PAGE&quot; and &quot;TAGS&quot; 3" time="1.787">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Helmut Schmidt","page" with value as "1" and "tags" with value as "famous-quotes,wisdom".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot;, &quot;PAGE&quot; and &quot;TAGS&quot; 4" time="1.83">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Helmut Schmidt","page" with value as "#$" and "tags" with value as "wisdom".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot;, &quot;PAGE&quot; and &quot;TAGS&quot; 5" time="1.794">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Helmut Schmi","page" with value as "#$" and "tags" with value as "wisd".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "1".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+<testcase classname="This feature file contains the test cases related to fetching quotes with filters" name="Fetching the quotes with the filter provided as &quot;AUTHOR&quot;, &quot;PAGE&quot; and &quot;TAGS&quot; 6" time="1.78">
+<system-out><![CDATA[Given User creates the getQuotes api request payload with filter as "author" with value as "Helmut","page" with value as "2" and "tags" with value as "wisdom".passed
+When User sends the request.................................................passed
+Then Verify that the status code is 200.....................................passed
+Then Verify that the response has field "page" and value is "2".............passed
+Then Verify that the response has field "results" as empty list.............passed
+And Verify the json schema for the response as "getQuotesNoResults".........passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "totalCount": {
+      "type": "integer"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "lastItemIndex": {
+      "type": "null"
+    },
+    "results": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "count",
+    "totalCount",
+    "page",
+    "totalPages",
+    "lastItemIndex",
+    "results"
+  ]
+}
